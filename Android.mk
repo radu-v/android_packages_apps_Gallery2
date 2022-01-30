@@ -51,6 +51,9 @@ LOCAL_SHARED_LIBRARIES += \
     libjni_trueportrait \
     libjni_filtergenerator
 
+LOCAL_OPTIONAL_USES_LIBRARIES := com.google.android.media.effects \
+    org.apache.http.legacy
+
 LOCAL_REQUIRED_MODULES := libts_detected_face_jni libts_face_beautify_jni
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
